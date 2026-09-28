@@ -179,7 +179,7 @@ function App() {
             <p>At Jivan Beej, we believe that the soul of any great dish lies in the quality of its ingredients. We focus on providing premium quality spices that deliver authentic flavour and natural aroma.</p>
             <p>Our carefully selected range of spices brings the true taste of tradition to your kitchen. With a commitment to purity and natural goodness, Jivan Beej ensures that every meal you prepare is memorable.</p>
             <a href="#products" className="btn btn-outline" style={{marginTop: '16px'}}>
-              View Our Selection
+              View Our Collection
             </a>
           </div>
         </div>
