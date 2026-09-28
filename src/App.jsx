@@ -139,12 +139,12 @@ function App() {
       </div>
 
       {/* Hero Section */}
-      <section className="hero" id="home">
+      <section className="hero" id="home" role="img" aria-label="Jivan Beej Indian spices">
         <div className="hero-overlay"></div>
         <div className="container hero-container">
           <div className="hero-content">
             <h1>Pure Spices.<br/>Authentic Flavour.</h1>
-            <p>Bringing the natural aroma, rich colour and authentic taste of carefully selected spices to your kitchen.</p>
+            <p>Bringing the natural aroma, rich colour and authentic taste of carefully selected Indian spices to your kitchen.</p>
             <div className="hero-buttons">
               <a href="#products" className="btn btn-primary">
                 Explore Our Spices <ArrowRight size={18} />
@@ -176,8 +176,8 @@ function App() {
           <div className="about-content">
             <h2>About Jivan Beej</h2>
             <div className="about-accent"></div>
-            <p>At Jivan Beej, we believe that the soul of any great dish lies in the quality of its ingredients. We focus on providing premium quality spices that deliver authentic flavour and natural aroma.</p>
-            <p>Our carefully selected range of spices brings the true taste of tradition to your kitchen. With a commitment to purity and natural goodness, Jivan Beej ensures that every meal you prepare is memorable.</p>
+            <p>At Jivan Beej, we believe that the soul of any great dish lies in the quality of its ingredients. We focus on providing premium quality Indian Spices that deliver authentic flavour and natural aroma.</p>
+            <p>Our carefully selected range brings the true taste of tradition to your kitchen. Sometimes searched as Jeevan Beej, our commitment to purity and natural goodness ensures that Jivan Beej Spices make every meal you prepare memorable.</p>
             <a href="#products" className="btn btn-outline" style={{marginTop: '16px'}}>
               View Our Collection
             </a>
@@ -197,13 +197,13 @@ function App() {
             {products.map(product => (
               <div key={product.id} className="product-card">
                 <div className="product-img-wrap">
-                  <img src={product.img} alt={product.name} className="product-img" />
+                  <img src={product.img} alt={`${product.name} (${product.hindi})`} className="product-img" />
                 </div>
                 <div className="product-content">
-                  <div className="product-title">
+                  <h3 className="product-title">
                     <span>{product.name}</span>
                     <span className="product-hindi">{product.hindi}</span>
-                  </div>
+                  </h3>
                   <p className="product-desc">{product.description}</p>
                   <a 
                     href={getWhatsAppLink(`Hello Jivan Beej, I am interested in your ${product.name} (${product.hindi}). Please share more details.`)} 
