@@ -250,11 +250,17 @@ section {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background-image: url('/images/hero-spices.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   color: var(--white);
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero-overlay {

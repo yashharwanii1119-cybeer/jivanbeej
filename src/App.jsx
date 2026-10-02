@@ -140,6 +140,7 @@ function App() {
 
       {/* Hero Section */}
       <section className="hero" id="home" role="img" aria-label="Jivan Beej Indian spices">
+        <img src="/images/hero-spices.png" alt="" className="hero-bg-img" />
         <div className="hero-overlay"></div>
         <div className="container hero-container">
           <div className="hero-content">
